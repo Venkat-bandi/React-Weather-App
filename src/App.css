@@ -1,0 +1,177 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  background: linear-gradient(to bottom right, #89cff0, #4a90e2);
+  /*background-color: #84cffaaa;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #4a90e2;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #357ab7;
+}
+
+/* Weather Display Styling */
+.weather-display {
+  background: #ffffffaa;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-display h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: #333;
+}
+
+.weather-info div {
+  text-align: center;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.forecast-item {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.add-to-favorites-button,
+.toggle-unit {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.add-to-favorites-button {
+  background-color:#00796b;
+}
+
+.add-to-favorites-button:hover {
+  background-color: #e6735a;
+}
+
+.toggle-unit {
+  background-color:#00796b;
+}
+
+.toggle-unit:hover {
+  background-color: #00796b;
+}
+
+/* Favorites Section */
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffffaa;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-item button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.favorite-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Error Message Styling */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 10px 0;
+}
